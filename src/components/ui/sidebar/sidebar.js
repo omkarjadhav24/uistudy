@@ -48,7 +48,7 @@ class Sidebar extends Component{
             <Menu >
               <MenuItem icon={<HiUsers />}> <NavLink to="/user-management">User Management</NavLink> </MenuItem>
               <MenuItem icon={<AiFillShop />}><NavLink to="/vendors">Vendors</NavLink></MenuItem>
-              <MenuItem icon={<GiFamilyTree />}><NavLink to="/product-category">Prodct Category</NavLink></MenuItem>
+              <MenuItem icon={<GiFamilyTree />}><NavLink to="/product-category">Product Category</NavLink></MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>

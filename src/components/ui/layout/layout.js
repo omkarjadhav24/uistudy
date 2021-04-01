@@ -3,7 +3,7 @@ import './layout.css'
 import 'font-awesome/css/font-awesome.min.css';
 import Sidebar from '../sidebar/sidebar'
 import UserM from '../../usermanagement/userm'
-import {  Route} from 'react-router-dom';
+import {Switch,  Route} from 'react-router-dom';
 
 class Layout extends Component{
     togglehandler=()=> {
@@ -16,9 +16,10 @@ class Layout extends Component{
                 <Sidebar/>
                <div className="cmp">
                   <div className="conatiner" >
-                        
                         <div className="card">
-                        <Route path="/user-management" component={UserM} />
+                            <Switch>
+                            <Route path="/user-management" component={UserM} />
+                            </Switch>
                         </div>
                   </div>
                </div>
