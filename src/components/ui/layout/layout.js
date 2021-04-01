@@ -3,7 +3,7 @@ import './layout.css'
 import 'font-awesome/css/font-awesome.min.css';
 import Sidebar from '../sidebar/sidebar'
 import UserM from '../../usermanagement/userm'
-import { Switch,NavLink , Route} from 'react-router-dom';
+import {  Route} from 'react-router-dom';
 
 class Layout extends Component{
     togglehandler=()=> {

@@ -8,13 +8,12 @@ import {
     SidebarFooter,
     SidebarContent,
   } from "react-pro-sidebar";
-import { FaList, FaRegHeart } from "react-icons/fa";
-import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
+import {  } from "react-icons/fa";
+import {  FiLogOut } from "react-icons/fi";
 import { HiUsers,HiOutlineViewList } from "react-icons/hi";
 import { AiFillShop } from "react-icons/ai";
 import { GiFamilyTree } from "react-icons/gi";
-import { Switch,NavLink , Route} from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import "react-pro-sidebar/dist/css/styles.css";
 class Sidebar extends Component{
   state={
