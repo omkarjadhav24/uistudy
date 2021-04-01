@@ -19,8 +19,8 @@ class Sidebar extends Component{
   state={
     menuCollapse:true
   }
+  // for collapsing sidebar
   menuIconClick = () => {
-    //condition checking to change state from true to false and vice versa
     let prevMenuCollapse=this.state.menuCollapse
     this.setState({
         menuCollapse:!prevMenuCollapse
@@ -30,17 +30,11 @@ class Sidebar extends Component{
         return(
             <>
            <div id="header">
-          {/* collapsed props to change menu size using menucollapse state */}
         <ProSidebar collapsed={this.state.menuCollapse}>
           <SidebarHeader>
           <div  onClick={this.menuIconClick} className="logotext">
-              {/* small and big change using this.state.menuCollapse state */}
               <p>{this.state.menuCollapse ? <MenuItem icon={<HiOutlineViewList />}></MenuItem> : <MenuItem icon={<HiOutlineViewList />}>Serve</MenuItem>}</p>
-              {/* {this.state.menuCollapse ? (
-                <MenuItem icon={<BsCardList />}></MenuItem>
-              ) : (
-                <MenuItem icon={<BsCardList />}></MenuItem>
-              )} */}
+           
             </div>
          
           </SidebarHeader>
