@@ -1,0 +1,11 @@
+.cmp{
+  background-color: #d9d9d9;
+    
+}
+.card{
+    width: 90%;
+    margin-left: 95px;
+    border: 2px solid #eee;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
