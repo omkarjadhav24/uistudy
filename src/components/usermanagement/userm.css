@@ -16,3 +16,20 @@
 .superadminbtn button{
     float: right;
 }
+@media only screen and (max-width: 480px){
+    .superadminbtn button{
+        float: left;
+    }
+    /* .nav div{
+        flex-wrap:wrap;
+    } */
+ }
+ @media only screen and (max-width: 1024px){
+    .superadminbtn button{
+        float: right;
+        margin-right: 80px;
+    }
+    /* .nav div{
+        flex-wrap:wrap;
+    } */
+ }

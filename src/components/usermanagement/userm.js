@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import UserAdmin from '../../components/usermanagement/useradmins/useradmin'
 import './userm.css'
 class Userm extends Component{
     render(){
@@ -7,12 +7,15 @@ class Userm extends Component{
             <>
             <div className="card-item">
                 <nav className="nav" >
-                    <div>Super Admins</div>
-                    <div>Vendor Admins</div>
-                    <div>Industry  Reps</div>
+                    <div className="text-primary">Super Admins</div>
+                    <div className="text-primary">Vendor Admins</div>
+                    <div className="text-primary">Industry  Reps</div>
                 </nav>
                 <div className="superadminbtn" >
-                <button type="button" class="btn btn-primary">+ ADD SYSYTEM SUPER ADMIN</button>
+                <button type="button" className="btn btn-primary">+ ADD SYSYTEM SUPER ADMIN</button>
+                </div>
+                <div className="superadmins">
+                   <UserAdmin/>
                 </div>
             </div>
             </>
