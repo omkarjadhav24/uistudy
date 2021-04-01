@@ -8,4 +8,24 @@
     border: 2px solid #eee;
     box-shadow: 2px 2px 5px #ccc;
 }
+@media only screen and (max-width: 480px){
+ .card{
+  width: 45%;
+  
+ }
+ .cmp{
+  background-color: #d9d9d9;
+    
+}
+}
+@media only screen and (max-width: 659px){
+  .card{
+   width: 90%;
+   
+  }
+  .cmp{
+    background-color: #d9d9d9;
+      
+  }
+ }
 
