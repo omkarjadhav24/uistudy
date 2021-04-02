@@ -6,24 +6,25 @@ import UserM from '../../usermanagement/userm'
 import {Switch,  Route} from 'react-router-dom';
 
 class Layout extends Component{
-    togglehandler=()=> {
-        var element = document.getElementById("sidebar");
-        element.classList.toggle("active");
-      }
+    
     render(){
         return(
-               <>
-                <Sidebar/>
-               <div className="cmp">
-                  <div className="conatiner" >
-                        <div className="card">
-                            <Switch>
-                            <Route path="/user-management" component={UserM} />
-                            </Switch>
+                  <div className="container-fluid px-0">
+                       <div className="row" >
+                       <div className="col-sm-1" >
+                          <Sidebar/>
                         </div>
+                       <div className="col-sm-11" >
+                            <div className="row" >
+                                <div className="col align-self-center" >
+                                    <Switch>
+                                    <Route path="/user-management" component={UserM} />
+                                    </Switch>
+                                </div>
+                            </div>
+                       </div>
+                       </div>
                   </div>
-               </div>
-               </>
         );
     };
 }

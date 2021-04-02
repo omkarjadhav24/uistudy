@@ -10,7 +10,7 @@
 }
 .nav div{
     flex-direction: row;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: block;
 }
 .superadminbtn button{
